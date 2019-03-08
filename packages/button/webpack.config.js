@@ -5,7 +5,7 @@ module.exports = {
     entry: './lib/button.js',
     output: {
         path: path.join(__dirname, '/'),
-        filename: 'js/index.js',
+        filename: 'lib/index.js',
         libraryTarget: 'umd'
     },
     module: {
