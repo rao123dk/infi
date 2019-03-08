@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const button = require('@infinity/button');
+const button = require('@dkrao/button');
 
 // TODO: DEMONSTRATE API
 ```
