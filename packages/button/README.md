@@ -1,4 +1,4 @@
-# `@infinity/button`
+# `@dkrao/button`
 
 > TODO: description
 
