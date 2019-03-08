@@ -1,5 +1,5 @@
 {
-  "name": "@rao/button",
+  "name": "@dkrao/button",
   "version": "0.0.7",
   "description": "button component",
   "keywords": [
@@ -42,5 +42,5 @@
     "webpack": "^4.5.0",
     "webpack-cli": "^3.2.1"
   },
-  "gitHead": "a60330bf294d2e52e08c2b2bde31d6ea09eb840b"
+  "gitHead": "f3ea16be1cd5b8f8fc31507e2f45a041220ce1ea"
 }
