@@ -1,4 +1,6 @@
+
+**/node_modules
 lib
 .babelrc
+.gitignore
 webpack.config.js
-**/node_modules

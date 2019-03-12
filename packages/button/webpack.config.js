@@ -1,26 +1,30 @@
+/*** webpack.config.js ***/
 const path = require('path');
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const htmlWebpackPlugin = new HtmlWebpackPlugin({
+//     template: path.join(__dirname, "examples/src/index.html"),
+//     filename: "./index.html"
+// });
 module.exports = {
-    mode: 'production',
-    entry: './lib/button.js',
-    output: {
-        path: path.join(__dirname, '/'),
-        filename: 'lib/index.js',
-        libraryTarget: 'umd'
-    },
+    entry: path.join(__dirname, "lib/index.js"),
     module: {
         rules: [
             {
-                test: /.jsx?$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            }, {
-                test: /\.scss$/,
-                loaders: ["style-loader", "css-loader", "sass-loader"],
-                include: path.resolve(__dirname, './')
+                test: /\.(js|jsx)$/,
+                use: "babel-loader",
+                exclude: /node_modules/
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
             }
         ]
+    },
+    plugins: [],
+    resolve: {
+        extensions: [".js", ".jsx"]
+    },
+    devServer: {
+        port: 3001
     }
-}
+};
